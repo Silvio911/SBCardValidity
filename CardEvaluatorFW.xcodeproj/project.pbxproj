@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		2965EE2821470B0A00D5F25F /* CardEvaluatorFW.h in Headers */ = {isa = PBXBuildFile; fileRef = 2965EE2621470B0A00D5F25F /* CardEvaluatorFW.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2965EE3621470B8300D5F25F /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965EE3021470B8300D5F25F /* Extentions.swift */; };
+		2965EE3721470B8300D5F25F /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965EE3221470B8300D5F25F /* Utility.swift */; };
+		2965EE3821470B8300D5F25F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965EE3421470B8300D5F25F /* Card.swift */; };
+		2965EE3921470B8300D5F25F /* LuhnAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965EE3521470B8300D5F25F /* LuhnAlgorithm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2965EE2321470B0A00D5F25F /* CardEvaluatorFW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CardEvaluatorFW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2965EE2621470B0A00D5F25F /* CardEvaluatorFW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardEvaluatorFW.h; sourceTree = "<group>"; };
 		2965EE2721470B0A00D5F25F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2965EE3021470B8300D5F25F /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		2965EE3221470B8300D5F25F /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		2965EE3421470B8300D5F25F /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		2965EE3521470B8300D5F25F /* LuhnAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuhnAlgorithm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +54,46 @@
 		2965EE2521470B0A00D5F25F /* CardEvaluatorFW */ = {
 			isa = PBXGroup;
 			children = (
+				2965EE3321470B8300D5F25F /* Classes */,
+				2965EE2E21470B8300D5F25F /* Helpers */,
 				2965EE2621470B0A00D5F25F /* CardEvaluatorFW.h */,
 				2965EE2721470B0A00D5F25F /* Info.plist */,
 			);
 			path = CardEvaluatorFW;
+			sourceTree = "<group>";
+		};
+		2965EE2E21470B8300D5F25F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2965EE2F21470B8300D5F25F /* Extensions */,
+				2965EE3121470B8300D5F25F /* Utility */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2965EE2F21470B8300D5F25F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2965EE3021470B8300D5F25F /* Extentions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2965EE3121470B8300D5F25F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2965EE3221470B8300D5F25F /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		2965EE3321470B8300D5F25F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2965EE3421470B8300D5F25F /* Card.swift */,
+				2965EE3521470B8300D5F25F /* LuhnAlgorithm.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2965EE3921470B8300D5F25F /* LuhnAlgorithm.swift in Sources */,
+				2965EE3721470B8300D5F25F /* Utility.swift in Sources */,
+				2965EE3821470B8300D5F25F /* Card.swift in Sources */,
+				2965EE3621470B8300D5F25F /* Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +316,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CardEvaluatorFW/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -293,6 +342,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CardEvaluatorFW/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
