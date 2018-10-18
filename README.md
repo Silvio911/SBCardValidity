@@ -19,14 +19,18 @@ Don't forget to import the framework with `import SBCardValidy`.
 
 ## Usage
 
+```
+let cardNumber = "4929804463622139"
+```
+
 ``` Chack validity
 let isValid = cardNumber.isValidCardNumber()
 ```
 
 ``` Card type by regular expresion
-let cardType = Card.cardType(for: "4929804463622139"!
+let cardType = Card.cardType(for: cardNumber)
 ```
 
 ``` Card type by range
-let cardTypeByRange = Card.cardTypeByRange(for: updatedString)
+let cardTypeByRange = Card.cardTypeByRange(for: cardNumber)
 ```
